@@ -25,11 +25,7 @@ const {counselorInfo} = require('os')
 mongoose.connect(config.mongoURI
 ).then(()=> console.log('MongoDB Connected..')).catch(err => console.log(err))
 
-app.get('/api/hello', (req,res) => {
-    res.send("안녕하세요~")
-})
-//시작페이지
-app.get('/',(req, res) => res.send('Hello World!'))
+
 
 
 //내담자 회원가입 부분
